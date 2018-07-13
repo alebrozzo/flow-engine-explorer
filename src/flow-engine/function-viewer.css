@@ -1,0 +1,61 @@
+.flow_function__container {
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.25rem;
+    position: relative;
+    box-shadow: 0 0 1.5rem 0 rgba(72, 94, 116, 0.7);
+    background-color: white;
+    margin: 2rem;
+    width: 40rem;
+}
+
+.flow_function__header {
+    width: 100%;
+    cursor: pointer;
+    background: -ms-linear-gradient(125deg, rgb(192, 207, 228) 0%, rgb(9, 106, 151) 100%); /* ie10+ */
+    background: linear-gradient(325deg, rgb(192, 207, 228) 0%, rgb(9, 106, 151) 100%);
+}
+
+.flow_function__header__id {
+    display: inline-block;
+    text-align: center;
+    width: 3rem;
+}
+
+.flow_function__body {
+    padding: 1rem;
+}
+
+.flow_function__body__code {
+    font-family: "Liberation Mono", Menlo, Courier, monospace;
+    white-space: pre-wrap;
+    margin: 1rem 0;
+    padding: 0.5rem;
+    background-color: #fcfcfc;
+}
+
+.flow_function__body__next_group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flow_function__body__next {
+    text-align: center;
+    margin-top: 0.25rem;
+}
+
+.flow_function__body__next_pass {
+    padding: 1rem;
+    background-color: rgba(0, 255, 0, 0.2);
+}
+
+.flow_function__body__next_fail {
+    padding: 1rem;
+    background-color: rgba(255, 0, 0, 0.2);
+}
+
+@media only screen and (max-width: 700px) {
+    .flow_function__container {
+        width: 400px;
+    }
+}
