@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FlowPage renders the page 1`] = `
+<div
+  className="flow_page__container"
+>
+  <div
+    className="flow_page__header"
+  >
+    <h1>
+      Flow Engine
+    </h1>
+  </div>
+  <div
+    className="flow_page__function_list"
+  >
+    <FunctionViewer
+      flowFunction={
+        Object {
+          "body": "function isWeekend(date = new Date()) {
+          const dayOfWeek = date.getDay();
+          return (dayOfWeek === 6) || (dayOfWeek === 0);
+        }",
+          "false_id": 5,
+          "id": 1,
+          "title": "Verify if weekend",
+          "true_id": 2,
+        }
+      }
+      key="1"
+      passed={true}
+    />
+    <FunctionViewer
+      flowFunction={
+        Object {
+          "body": "function celebrate() {
+          console.log('Party on!!!');
+          return true;
+        }",
+          "false_id": null,
+          "id": 2,
+          "title": "Celebrate",
+          "true_id": null,
+        }
+      }
+      key="2"
+      passed={false}
+    />
+  </div>
+</div>
+`;

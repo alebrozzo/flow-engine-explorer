@@ -13,7 +13,7 @@ export function run(functions: FlowFunction[]): Promise<ExecutionResult[]> {
     });
 }
 
-function executeNext(
+export function executeNext(
     allFunctions: FlowFunction[] = [],
     id: number,
     executedIds: ExecutionResult[] = []
@@ -29,7 +29,7 @@ function executeNext(
     return nextExecutedIds;
 }
 
-function executeFunction(functionAsString: string): boolean {
+export function executeFunction(functionAsString: string): boolean {
     // $FlowFixMe
     return new Function("return " + functionAsString)()();
 }
