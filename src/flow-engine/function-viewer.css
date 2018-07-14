@@ -12,8 +12,16 @@
 .flow_function__header {
     width: 100%;
     cursor: pointer;
-    background: -ms-linear-gradient(125deg, rgb(192, 207, 228) 0%, rgb(9, 106, 151) 100%); /* ie10+ */
-    background: linear-gradient(325deg, rgb(192, 207, 228) 0%, rgb(9, 106, 151) 100%);
+}
+
+.flow_function__header-pass {
+    background: -ms-linear-gradient(125deg, green 0%, mediumseagreen 100%); /* ie10+ */
+    background: linear-gradient(325deg, green 0%, mediumseagreen 100%);
+}
+
+.flow_function__header-fail {
+    background: -ms-linear-gradient(125deg, crimson 0%, red 100%); /* ie10+ */
+    background: linear-gradient(325deg, crimson 0%, red 100%);
 }
 
 .flow_function__header__id {

@@ -1,3 +1,4 @@
+// @flow
 export type FlowFunction = {
     id: number,
     title: string,

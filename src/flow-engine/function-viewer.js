@@ -1,3 +1,4 @@
+// @flow
 import * as React from "react";
 
 import { type FlowFunction } from "../types/flow-function";
@@ -5,6 +6,7 @@ import "./function-viewer.css";
 
 type Props = {
     flowFunction: FlowFunction,
+    passed: boolean,
 };
 
 type State = {
@@ -22,11 +24,13 @@ export class FunctionViewer extends React.PureComponent<Props, State> {
 
     render() {
         const { isOpen } = this.state;
-        const { flowFunction } = this.props;
+        const { flowFunction, passed } = this.props;
 
         return (
             <div className="flow_function__container">
-                <div className="flow_function__header" onClick={this.toggleView}>
+                <div
+                    className={"flow_function__header flow_function__header-" + (passed ? "pass" : "fail")}
+                    onClick={this.toggleView}>
                     <h2>
                         <span className="flow_function__header__id">{flowFunction.id}</span>
                         {flowFunction.title}
