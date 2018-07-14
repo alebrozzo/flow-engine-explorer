@@ -1,0 +1,117 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FunctionViewer renders a function's data 1`] = `
+<div
+  className="flow_function__container"
+>
+  <div
+    className="flow_function__header"
+    onClick={[Function]}
+  >
+    <h2>
+      <span
+        className="flow_function__header__id"
+      >
+        1
+      </span>
+      Verify if weekend
+    </h2>
+  </div>
+  <div
+    className="flow_function__body"
+  >
+    <div
+      className="flow_function__body__next_group"
+    >
+      <div
+        className="flow_function__body__next_pass"
+      >
+        <label
+          htmlFor="flowPass_1"
+        >
+          Next if passed
+        </label>
+        <div
+          className="flow_function__body__next"
+          id="flowPass_1"
+        >
+          2
+        </div>
+      </div>
+      <div
+        className="flow_function__body__next_fail"
+      >
+        <label
+          htmlFor="flowPass_1"
+        >
+          Next if failed
+        </label>
+        <div
+          className="flow_function__body__next"
+          id="flowPass_1"
+        >
+          3
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`FunctionViewer renders a function's data when no more functions in chain 1`] = `
+<div
+  className="flow_function__container"
+>
+  <div
+    className="flow_function__header"
+    onClick={[Function]}
+  >
+    <h2>
+      <span
+        className="flow_function__header__id"
+      >
+        2
+      </span>
+      Celebrate
+    </h2>
+  </div>
+  <div
+    className="flow_function__body"
+  >
+    <div
+      className="flow_function__body__next_group"
+    >
+      <div
+        className="flow_function__body__next_pass"
+      >
+        <label
+          htmlFor="flowPass_2"
+        >
+          Next if passed
+        </label>
+        <div
+          className="flow_function__body__next"
+          id="flowPass_2"
+        >
+          End
+        </div>
+      </div>
+      <div
+        className="flow_function__body__next_fail"
+      >
+        <label
+          htmlFor="flowPass_2"
+        >
+          Next if failed
+        </label>
+        <div
+          className="flow_function__body__next"
+          id="flowPass_2"
+        >
+          End
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

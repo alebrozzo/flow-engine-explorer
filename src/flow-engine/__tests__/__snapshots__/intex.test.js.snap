@@ -1,0 +1,95 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FlowPage renders the page 1`] = `
+<div
+  className="flow_page__container"
+>
+  <div
+    className="flow_page__header"
+  >
+    <h1>
+      Flow Engine
+    </h1>
+  </div>
+  <div
+    className="flow_page__function_list"
+  >
+    <FunctionViewer
+      flowFunction={
+        Object {
+          "body": "function isWeekend(date) {
+          const dayOfWeek = date.getDay();
+          return (dayOfWeek === 6) || (dayOfWeek === 0);
+        }",
+          "false_id": 3,
+          "id": 1,
+          "title": "Verify if weekend",
+          "true_id": 2,
+        }
+      }
+      key="1"
+    />
+    <FunctionViewer
+      flowFunction={
+        Object {
+          "body": "function celebrate() {
+          console.log('Party on!!!');
+          return true;
+        }",
+          "false_id": null,
+          "id": 2,
+          "title": "Celebrate",
+          "true_id": null,
+        }
+      }
+      key="2"
+    />
+    <FunctionViewer
+      flowFunction={
+        Object {
+          "body": "function isItFriday(date) {
+          const dayOfWeek = date.getDay();
+          return dayOfWeek === 5;
+        }",
+          "false_id": 5,
+          "id": 3,
+          "title": "Verify if Friday",
+          "true_id": 4,
+        }
+      }
+      key="3"
+    />
+    <FunctionViewer
+      flowFunction={
+        Object {
+          "body": "function tgif() {
+          console.log('TGIF!');
+          return true;
+        }",
+          "false_id": null,
+          "id": 4,
+          "title": "TGIF",
+          "true_id": null,
+        }
+      }
+      key="4"
+    />
+    <FunctionViewer
+      flowFunction={
+        Object {
+          "body": "function groan(date) {
+          const daysUntilWeekend = 6 - date.getDay();
+          console.log('Hang in there... ' + daysUntilWeekend + ' days until the weekend!');
+          return true;
+        }",
+          "false_id": null,
+          "id": 5,
+          "title": "Groan",
+          "true_id": null,
+        }
+      }
+      key="5"
+    />
+  </div>
+</div>
+`;
